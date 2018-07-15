@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
  * Created by RAHUL on Jul, 2018
  */
 @RestController
-@RequestMapping(value = "/config")
-public class CarrierController {
+@RequestMapping(value = "/app")
+public class CustomerController {
 
-    @RequestMapping(value = "/carriers", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers", method = RequestMethod.GET)
     @PreAuthorize("hasRole('USER')")
-    public String getCarrier(){
-        return "carriers";
+    public String getCustomers(){
+        return "customers";
     }
 
 }
