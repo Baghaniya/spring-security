@@ -28,21 +28,17 @@ public class User {
     private Long id;
 
     @NotBlank
-    @Size(max = 40)
     private String name;
 
     @NotBlank
-    @Size(max = 15)
     private String username;
 
     @NaturalId
     @NotBlank
-    @Size(max = 40)
     @Email
     private String email;
 
     @NotBlank
-    @Size(max = 100)
     private String password;
 
     @ManyToMany(fetch = FetchType.LAZY)
